@@ -1,4 +1,4 @@
-//handle navbar
+//handle navbar slider
 const navbar = document.querySelectorAll(".nav-link");
 const nav_collapse = document.querySelector(".navbar-collapse ");
 
@@ -9,13 +9,12 @@ navbar.forEach(navLink => {
 });
 
 
-window.addEventListener('scroll', function (e) {
-    var nav = document.querySelector(".navbar");
-    nav.style.backgroundColor = "black";
-
-
-    setTimeout(function () {
-        nav.style.backgroundColor = "transparent";
-    }, 800);
-});
-
+// navbar icon
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });

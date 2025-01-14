@@ -38,8 +38,9 @@ section {
 }
 
 .navbar-brand img {
-  max-width: 100px;
+  width: 80px;
   height: auto;
+ 
 }
 .navbar {
   background-color: transparent;
@@ -206,6 +207,11 @@ h1 {
   #home h1 {
     padding-left: 10%;
   }
+  .navbar-brand img {
+    width: 65px;
+    height: auto;
+   
+  }
 
 
 }
@@ -230,6 +236,10 @@ h1 {
   #home {
     text-align: center;
   }
-
+  .navbar-brand img {
+    width: 60px;
+    height: auto;
+   
+  }
 
 }
